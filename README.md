@@ -1,3 +1,3 @@
-# Whisper-Speech-Recognition
+# Whisper Automatic Speech Recognition
 
-https://bit.ly/tinywhisperer-colab
+[Google Colab](https://colab.research.google.com/drive/1GPmQMYNKdDdoFOsoSsziuE-MTGOYqrzJ#scrollTo=Lxu2nMfW2guX)
