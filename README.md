@@ -5,10 +5,10 @@ This repository contains the Python scripts and notebooks for a speech recogniti
 ## Table of Contents
 - [Introduction](#introduction)
 - [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Methodology](#methodology)
 - [Results](#results)
+- [Room for Improvement](#room-for-improvement)
+- [Attachment](#attachment)
 
 # Introduction
 
