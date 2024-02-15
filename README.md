@@ -12,7 +12,7 @@ This repository contains the Python scripts and notebooks for a speech recogniti
 
 # Introduction
 
-This project aims to utilize the Whisper model for speech recognition, addressing challenges in understanding diverse accents and dialects in spoken language. It's designed to showcase the capabilities of state-of-the-art speech recognition technologies in handling complex audio data.
+This project is centered on harnessing the Whisper Medium model to advance speech recognition capabilities, particularly in the realm of processing and understanding a wide spectrum of accents and dialects present in spoken language. The initiative is crafted to demonstrate the effectiveness of advanced speech recognition technologies in managing and interpreting complex audio data. By focusing on the challenges posed by the variability in spoken language, the project aims to explore and highlight the potential of the Whisper model in providing reliable and accurate transcriptions across a diverse range of linguistic characteristics.
 
 ---
 
@@ -34,6 +34,13 @@ The data fields remain consistent across all splits of the dataset, providing a 
 
 ### Data Splits
 To accommodate various training and testing scenarios, the dataset is structured into splits. However, each configuration within the dataset currently includes only a "train" split. This split consists of approximately 600 examples, providing a substantial volume of data for developing and refining speech recognition models in the context of intent detection within the e-banking domain.
+
+---
+
+# Methodology
+## Exploratory Data Analysis
+
+
 
 ---
 
