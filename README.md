@@ -92,6 +92,40 @@ Plotting the class distribution helps in visualizing the frequency of each inten
 Each step involves specific code snippets and visualizations that contribute to a comprehensive exploratory data analysis, aiding in the understanding and preprocessing of the dataset for model training.
 
 ---
+## Import Pretrained Model and Load its Preprocessor
+
+### 1. Importing Pretrained Model
+The model is instantiated using a pretrained Whisper model, specifically the "openai/whisper-medium" version, which is designed for speech-to-text tasks.
+
+### 2. Load Preprocessor
+A preprocessor is loaded to match the Whisper model's expected input format. It's set to process English language audio for transcription tasks.
+
+---
+## Preprocessing
+
+### 1. Train Test Split
+The dataset is divided into training and test sets, with 20% of the data reserved for testing, to evaluate the model's performance on unseen data.
+
+### 2. Resampling Input Data
+Audio data is resampled to match the Whisper model's expected sampling rate, ensuring uniformity across all inputs and optimizing model performance.
+
+### 3. Building Preprocess Function
+A custom function prepares the dataset by applying the preprocessor to each audio sample, converting them into a format suitable for the model and calculating the duration of each audio clip in seconds.
+
+### 4. Mapping Preprocess Function to Dataset
+The preprocess function is applied to the entire dataset, removing irrelevant columns and transforming the audio data into a model-ready format.
+
+### 5. Filtering Data
+Audio samples longer than 30 seconds are filtered out to maintain consistency and manage computational load, focusing on shorter, potentially more informative audio segments.
+
+### 6. Data Collator
+A specialized data collator is defined to handle the unique requirements of padding speech-to-text model inputs and labels, ensuring proper tensor shapes and masking padding in labels for accurate loss calculation.
+
+### 7. Instantiating the Data Collator
+The data collator is initialized with the preprocessor, ready to collate batches of processed audio data for training the model, optimizing the data flow into the model during training sessions.
+
+---
+
 
 ## Installation
 
